@@ -1,0 +1,8 @@
+GET http://localhost:8080/movie
+Accept: application/json
+
+###
+
+GET http://localhost:8080/movie/238
+Accept: application/json
+

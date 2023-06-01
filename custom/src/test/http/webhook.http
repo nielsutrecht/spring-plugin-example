@@ -1,0 +1,7 @@
+POST http://localhost:8080/webhook/movie/238
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/webhook/movie/238
+Accept: application/json
