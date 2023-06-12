@@ -1,4 +1,4 @@
-package com.nibado.example.plugin.integration
+package com.nibado.example.plugin.custom.integration
 
 import com.nibado.example.plugin.facade.config.EventPublisher
 import org.springframework.http.ResponseEntity
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 class MovieUpdateWebhook(private val movieDatabase: MovieDatabase, private val eventPublisher: EventPublisher) {
     @PostMapping("/movie/{id}")
     fun movieUpdated(@PathVariable id: String): ResponseEntity<Unit> {
-        val movie = movieDatabase.getMovie(id)
+        val movie = movieDatabase.getMovie(id) ?: return ResponseEntity.notFound().build()
 
         eventPublisher.update(movie)
 

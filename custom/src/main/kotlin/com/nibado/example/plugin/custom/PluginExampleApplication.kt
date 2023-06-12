@@ -1,4 +1,4 @@
-package com.nibado.example.plugin
+package com.nibado.example.plugin.custom
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

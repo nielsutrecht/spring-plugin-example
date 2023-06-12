@@ -1,5 +1,6 @@
 package com.nibado.example.plugin.facade.movies
 
+import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -19,23 +20,27 @@ class MovieController(private val movieService: MovieService) {
     }
 
     @GetMapping("/{id}")
-    fun getById(@PathVariable id: String): Movie {
-        return movieService.getSingle(id)
+    fun getById(@PathVariable id: String): ResponseEntity<Movie> {
+        return ResponseEntity.ofNullable(movieService.getSingle(id))
     }
 
     @PostMapping
     fun createMovie(@RequestBody movie: Movie): Movie {
+        movieService.create(movie)
         return movie
     }
 
     @PutMapping("/{id}")
-    fun updateMovie(@PathVariable id: String): Movie {
-        TODO()
+    fun updateMovie(@PathVariable id: String, @RequestBody movie: Movie): Movie {
+        movieService.update(id, movie)
+        return movie
     }
 
     @DeleteMapping("/{id}")
-    fun deleteMovie(@PathVariable id: String, @RequestBody movie: Movie): Movie {
-        TODO()
+    fun deleteMovie(@PathVariable id: String): ResponseEntity<Unit> {
+        movieService.delete(id)
+
+        return ResponseEntity.noContent().build()
     }
 
     data class MoviesResponse(val movies: List<Movie>)

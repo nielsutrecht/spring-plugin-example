@@ -1,0 +1,104 @@
+{
+    "movies": [
+        {
+            "id": "603692",
+            "title": "John Wick: Chapter 4",
+            "released": "2023-03-22"
+        },
+        {
+            "id": "502356",
+            "title": "The Super Mario Bros. Movie",
+            "released": "2023-04-05"
+        },
+        {
+            "id": "569094",
+            "title": "Spider-Man: Across the Spider-Verse",
+            "released": "2023-05-31"
+        },
+        {
+            "id": "385687",
+            "title": "Fast X",
+            "released": "2023-05-17"
+        },
+        {
+            "id": "447277",
+            "title": "The Little Mermaid",
+            "released": "2023-05-18"
+        },
+        {
+            "id": "890771",
+            "title": "The Black Demon",
+            "released": "2023-04-26"
+        },
+        {
+            "id": "713704",
+            "title": "Evil Dead Rise",
+            "released": "2023-04-12"
+        },
+        {
+            "id": "640146",
+            "title": "Ant-Man and the Wasp: Quantumania",
+            "released": "2023-02-15"
+        },
+        {
+            "id": "879444",
+            "title": "Accident Man: Hitman's Holiday",
+            "released": "2022-10-14"
+        },
+        {
+            "id": "447365",
+            "title": "Guardians of the Galaxy Vol. 3",
+            "released": "2023-05-03"
+        },
+        {
+            "id": "840326",
+            "title": "Sisu",
+            "released": "2023-01-27"
+        },
+        {
+            "id": "882569",
+            "title": "Guy Ritchie's The Covenant",
+            "released": "2023-04-19"
+        },
+        {
+            "id": "76600",
+            "title": "Avatar: The Way of Water",
+            "released": "2022-12-14"
+        },
+        {
+            "id": "1018494",
+            "title": "Operation Seawolf",
+            "released": "2022-10-07"
+        },
+        {
+            "id": "1107872",
+            "title": "Mother's Day",
+            "released": "2023-05-24"
+        },
+        {
+            "id": "1073140",
+            "title": "The Three Musketeers",
+            "released": "2023-03-23"
+        },
+        {
+            "id": "324857",
+            "title": "Spider-Man: Into the Spider-Verse",
+            "released": "2018-12-06"
+        },
+        {
+            "id": "893712",
+            "title": "Sword Art Online the Movie -Progressive- Scherzo of Deep Night",
+            "released": "2022-10-22"
+        },
+        {
+            "id": "758323",
+            "title": "The Pope's Exorcist",
+            "released": "2023-04-05"
+        },
+        {
+            "id": "667538",
+            "title": "Transformers: Rise of the Beasts",
+            "released": "2023-06-06"
+        }
+    ]
+}
